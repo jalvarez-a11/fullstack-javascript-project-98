@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log("¡Bienvenido a brain games!");
+import sayHiToUser from '../src/cli.js';
+
+sayHiToUser();
