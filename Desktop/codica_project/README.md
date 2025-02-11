@@ -106,3 +106,4 @@ Graba una asciinema con un ejemplo de instalación del paquete, ejecución del j
 Consejos
 Los archivos ejecutables son usuarios de tu código, no tu código en sí.
 El directorio bin está destinado solo para archivos ejecutables.
+asciinema recording :  https://asciinema.org/a/7exLseRZYfm2n4EmRV6UOnKgF
