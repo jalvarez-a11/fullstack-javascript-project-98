@@ -2,16 +2,16 @@ import readlineSync from 'readline-sync';
 
 function calcularMCD(a, b) {
   while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
+    const temp = a % b;
+    a = b;
+    b = temp;
   }
   return a;
 }
 
 function generateRandomNumbers() {
-  const num1 = Math.floor(Math.random() * 100) + 1;
-  const num2 = Math.floor(Math.random() * 100) + 1;
+  const num1 = Math.floor(Math.random() * 20) + 1;
+  const num2 = Math.floor(Math.random() * 20) + 1;
   return [num1, num2];
 }
 
