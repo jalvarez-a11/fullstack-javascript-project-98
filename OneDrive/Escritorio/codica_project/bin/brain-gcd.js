@@ -17,7 +17,7 @@ function generateRandomNumbers() {
 
 function playGame() {
   console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question(`¿Cuál es tu nombre?, ${name}`);
+  const name = readlineSync.question(`¿Cuál es tu nombre?`);
   console.log(`¡Hola, ${name}!`);
 
   let score = 0;
@@ -28,7 +28,7 @@ function playGame() {
     const result = calcularMCD(num1, num2);
     console.log(`Encuentra el máximo común divisor de los números dados.`);
     console.log(`pregunta: ${num1} y ${num2}`)
-    const userAnswer = parseInt(readlineSync.question('Tu respuesta: '));
+    const userAnswer = Number(readlineSync.question('Tu respuesta: '));
 
     if (userAnswer === result) {
       console.log('¡Correcto!');

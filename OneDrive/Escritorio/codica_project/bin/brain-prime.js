@@ -14,7 +14,7 @@ function esPrimo(n) {
 
 function playGame(){
   console.log('¡Bienvenido a brain games!');
-   const name = readlineSync.question(`¿Cuál es tu nombre? ${name}`);
+   const name = readlineSync.question(`¿Cuál es tu nombre?`);
    console.log(`hola ${name}`);
 
    let score = 0;
