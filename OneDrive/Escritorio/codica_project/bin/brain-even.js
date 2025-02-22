@@ -1,9 +1,8 @@
 import readlineSync from 'readline-sync';
 
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question(`¿ Cuál es tu nombre?`);
+import sayHiToUser from '../src/cli.js';
 
-  console.log(`¡Hola, ${name.toLowerCase()}!`);
+const name = sayHiToUser();
 
   console.log(`Responde "si" si el número es par, de lo contrario responde "no".`);
 
