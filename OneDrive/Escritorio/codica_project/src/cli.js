@@ -5,5 +5,5 @@ export default function sayHiToUser() {
   const name = readlineSync.question('¿ Cuál es tu nombre? ');
 
   console.log(`¡Hola, ${name.toLowerCase()}!`);
-
+  return name;
 }

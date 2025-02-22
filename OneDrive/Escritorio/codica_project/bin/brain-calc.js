@@ -1,3 +1,7 @@
+import sayHiToUser from '../src/cli.js';
+
+const name = sayHiToUser(); // Llama a la función
+
 import readlineSync from 'readline-sync';
 
  const operators = ['+', '-', '*'];
@@ -18,10 +22,7 @@ import readlineSync from 'readline-sync';
   }
 
   function playGame(){
-    console.log('¡Bienvenido a brain games!');
-   const name = readlineSync.question('¿ Cuál es tu nombre?');
-   console.log(`hola ${name}`);
-
+    
    let score = 0;
    let rounds = 3;
 
@@ -49,7 +50,7 @@ import readlineSync from 'readline-sync';
     }
   }
   
-  playGame();
+  playGame(name);
 
    
 

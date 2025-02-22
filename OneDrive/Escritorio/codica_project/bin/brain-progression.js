@@ -1,3 +1,7 @@
+import sayHiToUser from '../src/cli.js';
+
+const name = sayHiToUser();
+
 import readlineSync from 'readline-sync';
 
 function generateProgression(start, diff, length) {
@@ -9,9 +13,6 @@ function generateProgression(start, diff, length) {
 }
 
 function playBrainProgression() {
-    console.log('¡Bienvenido a Brain Games!');
-    const name = readlineSync.question('¿Cuál es tu nombre? ');
-    console.log(`¡Hola, ${name}!\n`);
     console.log('¿Qué número falta en la progresión?');
 
     for (let round = 0; round < 3; round++) {
@@ -41,6 +42,6 @@ function playBrainProgression() {
     console.log(`¡Felicidades, ${name}!`);
 }
 
-playBrainProgression();
+playBrainProgression(name);
 
             

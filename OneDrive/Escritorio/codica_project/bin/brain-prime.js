@@ -1,3 +1,7 @@
+import sayHiToUser from '../src/cli.js';
+
+const name = sayHiToUser();
+
 import readlineSync from 'readline-sync';
 
 function esPrimo(n) {
@@ -13,9 +17,6 @@ function esPrimo(n) {
 }
 
 function playGame(){
-  console.log('¡Bienvenido a brain games!');
-   const name = readlineSync.question(`¿Cuál es tu nombre?`);
-   console.log(`hola ${name}`);
 
    let score = 0;
    let rounds = 3;
@@ -48,4 +49,4 @@ function playGame(){
     }
   }
   
-  playGame();
+  playGame(name);

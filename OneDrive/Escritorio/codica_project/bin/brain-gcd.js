@@ -1,3 +1,7 @@
+import sayHiToUser from '../src/cli.js';
+
+const name = sayHiToUser();
+
 import readlineSync from 'readline-sync';
 
 function calcularMCD(a, b) {
@@ -16,10 +20,7 @@ function generateRandomNumbers() {
 }
 
 function playGame() {
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question(`¿Cuál es tu nombre?`);
-  console.log(`¡Hola, ${name}!`);
-
+ 
   let score = 0;
   const rounds = 3;
 
@@ -47,7 +48,7 @@ function playGame() {
   }
 }
 
-playGame();
+playGame(name);
    
 
 
